@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://kit.fontawesome.com/6015a3044d.js" crossorigin="anonymous"></script>
     <title>Doctor Superheroes</title>
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+        />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Doctor Superheroes</h1>
-    <div class="container"></div>
+    <section class="hero is-success mb-5">
+        <div class="hero-body">
+          <p class="title is-size-1" >
+            Superheroes <i class="fas fa-meteor"></i>
+          </p>
+          
+        </div>
+      </section>
+    </div>
+    <div class="column is-half is-offset-one-quarter">
+        <div class="field">
+            <input class="input" type="text" id="search" placeholder="Search for Superheroes">
+        </div>
+    </div>
+    <div class="column is-half is-offset-one-quarter mb-5">
+        <button class="button is-success" id="good-superheroes">Good Superheroes</button>
+        <button class="button is-danger" id="bad-superheroes">Bad Superheroes</button>
+        <button class="button is-dark" id="neutral-superheroes">Neutral Superheroes</button>
+        <button class="button is-warning" id="reset">Reset</button>
+    </div>
+    
+    
+    <div class="container columns is-multiline"></div>
     <script src="./script.js"></script>
 </body>
 </html>
