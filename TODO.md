@@ -1,9 +1,16 @@
-See a list of Doctor Superheroes after the page loads.
+As a user:
 
-I want to select a status from a bar to filter the list of superheroes
+I want to see a list of Superheroes after the page loads.
 
-Click and reset button to undo the filter and return to the original list
+I want to select an alignment of good, bad or neutral Superheroes from a button.
 
--MPV
+I want to click on reset button to undo the new filter of Superheroes and return to the default list.
 
-    -name, gender, occupation, image
+I want to ty
+
+
+MVP Event Listeners:
+
+    - DOM Content loaded with Fetch Request to Superheroes API.
+    - Click button for good, bad, neutral Superheroes.
+    - Keyup for the search bar

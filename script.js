@@ -2,10 +2,10 @@
 const AccessToken = '3754126508031263';
 const url = 'https://www.superheroapi.com/api.php/'+AccessToken+'/search/';
 
-let superHeroes = []
+// let superHeroes = []
 
 
-// Event listeners
+// fetch and Event listener
 document.addEventListener("DOMContentLoaded", () => {
     fetchSuperheroes();
 });
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Calling API
 const fetchSuperheroes = (search) => {
-    const defaultSearch = "doctor";
+    const defaultSearch = "%20";
     fetch(`${url}${search || defaultSearch}`)
     .then(res => res.json())
     .then((data) => {
@@ -46,7 +46,7 @@ const renderSuperheroes = (superheroes) => {
 }
 
 
-//create two buttons, one for 'good guys' and one for 'bad guys'
+//create two buttons, one for 'good guys', 'bad guys' and 'neutral
 
 const goodSuperheroesButton = document.getElementById("good-superheroes");
 goodSuperheroesButton.addEventListener("click", () => {
